@@ -57,6 +57,11 @@ app.get('/bad', (req,res) => {
   });
 });
 
+app.get('/projects', (req,res) => {
+  res.render('projects.hbs', {
+    title: 'This is portfolio'
+  });
+});
 
 
 app.listen(port, () => {
