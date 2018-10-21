@@ -37,7 +37,7 @@ hbs.registerHelper('screamIt', (text) => {
 
 app.get('/',(req,res) => {
   res.render('home.hbs', {
-    title: 'Home Page',
+    title: 'Home',
     desc: 'Home page'
   });
 
@@ -45,7 +45,7 @@ app.get('/',(req,res) => {
 
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
-    pageTitle: 'About Page',
+    pageTitle: 'About',
     currentYear: new Date().getFullYear()
   });
 });
@@ -53,7 +53,7 @@ app.get('/about', (req, res) => {
 
 app.get('/bad', (req,res) => {
   res.send({
-      errorMsg: 'Unable to hand the request'
+      errorMsg: 'Unable to hand the request!'
   });
 });
 
